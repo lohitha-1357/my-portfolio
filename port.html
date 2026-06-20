@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+  <title>Karedla Lohitha Pravallika — Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Karedla Lohitha Pravallika, B.Tech CSE (Cyber Security) student and full-stack web developer.">
+
+  <!-- Google Fonts: 3 typefaces with different roles
+       Space Grotesk  → headings (personality)
+       Inter          → body text (readable)
+       JetBrains Mono → labels, tags, code (technical feel) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- All styles live in style.css — nothing inline here -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <!-- =====================================================
+       NAVIGATION BAR
+       Sticky — stays at top as you scroll.
+       ===================================================== -->
+  <header class="nav">
+    <div class="nav-inner">
+
+      <!-- Left: identity label -->
+      <div class="nav-id mono">ID <b>·</b> KAREDLA LOHITHA PRAVALLIKA</div>
+
+      <!-- Right: section links -->
+      <nav class="nav-links">
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#stack">Stack</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+
+  <!-- =====================================================
+       HERO SECTION
+       Left: intro text + CTA buttons
+       Right: ID badge card with photo
+       ===================================================== -->
+  <section class="hero">
+    <div class="wrap hero-grid">
+
+      <!-- LEFT COLUMN — text content -->
+      <div>
+        <!-- Small label above the name -->
+        <div class="eyebrow">
+          <span class="dot"></span>
+          OPEN TO FRESHER WEB DEVELOPER ROLES
+        </div>
+
+        <!-- Main heading — last name in gold accent -->
+        <h1>Karedla Lohitha <span>Pravallika</span></h1>
+
+        <!-- One-liner role description -->
+        <div class="hero-role">Full-Stack Web Developer · B.Tech CSE, Cyber Security</div>
+
+        <!-- Short bio paragraph -->
+        <p class="hero-summary">
+          Final-year engineering student with a 9.07 CGPA, building full-stack products
+          end to end — React and Next.js on the front, Node.js, Python and PHP on the back,
+          MySQL, PostgreSQL and MongoDB underneath. Four internships in, with a
+          security-minded approach to shipping software.
+        </p>
+
+        <!-- Call-to-action buttons -->
+        <div class="hero-cta">
+          <a class="btn btn-solid" href="#projects">View projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div><!-- /LEFT COLUMN -->
+
+
+      <!-- RIGHT COLUMN — ID Badge card -->
+      <div class="badge-stage">
+        <div class="badge">
+
+          <!-- Badge header row -->
+          <div class="badge-top">
+            <span>Student Access</span>
+            <span class="live">Verified</span>
+          </div>
+
+          <!-- Profile photo -->
+          <div class="badge-photo">
+            <!--
+              Replace the src with your actual photo URL or file path.
+              The base64 data from the original has been removed here
+              for readability — add it back or use a real image file.
+              Example: <img src="photo.jpg" alt="Lohitha Pravallika">
+            -->
+            <img src="photo.jpeg" alt="Karedla Lohitha Pravallika">
+          </div>
+
+          <!-- Name and role on the badge -->
+          <div class="badge-name">Karedla Lohitha Pravallika</div>
+          <div class="badge-role">Full-Stack Developer</div>
+          <div class="badge-sub">B.Tech CSE · Cyber Security</div>
+
+          <!-- Dashed divider -->
+          <hr class="badge-div">
+
+          <!-- Footer row: CGPA + college -->
+          <div class="badge-foot">
+            <span>CGPA <b>9.07</b></span>
+            <span>Raghu Engineering College</span>
+          </div>
+
+          <!-- Decorative barcode strip at the bottom -->
+          <div class="barcode"></div>
+
+        </div>
+      </div><!-- /RIGHT COLUMN (badge) -->
+
+    </div>
+  </section><!-- /HERO -->
+
+
+  <!-- =====================================================
+       STATS STRIP
+       Quick numbers at a glance.
+       ===================================================== -->
+  <div class="stats">
+    <div class="wrap stats-inner">
+
+      <div class="stat">
+        <div class="num">9.04</div>
+        <div class="lab">CGPA</div>
+      </div>
+
+      <div class="stat">
+        <div class="num">4+</div>
+        <div class="lab">Internships</div>
+      </div>
+
+      <div class="stat">
+        <div class="num">3</div>
+        <div class="lab">Live Projects</div>
+      </div>
+
+      <div class="stat">
+        <div class="num">10+</div>
+        <div class="lab">Certifications</div>
+      </div>
+
+    </div>
+  </div><!-- /STATS -->
+
+
+  <!-- =====================================================
+       EXPERIENCE SECTION
+       A vertical timeline of roles (log).
+       Each item can be "active" (current) or "done" (past).
+       ===================================================== -->
+  <section id="experience">
+    <div class="wrap">
+
+      <!-- Section header -->
+      <div class="sec-head reveal">
+        <span class="sec-tag">01 /</span>
+        <h2>Experience</h2>
+      </div>
+
+      <!-- Timeline container — left border is the vertical line -->
+      <div class="log reveal">
+
+        <!-- ── Active role (teal marker) ── -->
+        <div class="log-item active">
+          <div class="log-marker"></div>
+
+          <div class="log-head">
+            <h3>Full-Stack Developer Intern</h3>
+            <span class="log-time">Jan 2025 – Present</span>
+            <span class="log-status">Active</span>
+          </div>
+
+          <div class="log-org">Internship Assignment · Remote</div>
+
+          <ul>
+            <li>Built a College Discovery Platform with Next.js 14, TypeScript, and PostgreSQL</li>
+            <li>Implemented authentication with NextAuth v5 (GitHub, Google, credentials)</li>
+            <li>Deployed to Vercel with Prisma ORM and Zustand state management</li>
+            <li>Created an AI App Generator with GitHub export feature</li>
+          </ul>
+        </div>
+
+        <!-- ── Past role (gold marker) ── -->
+        <div class="log-item done">
+          <div class="log-marker"></div>
+
+          <div class="log-head">
+            <h3>Python Full Stack Intern</h3>
+            <span class="log-time">Jun 2024 – Aug 2024</span>
+            <span class="log-status">Completed</span>
+          </div>
+
+          <div class="log-org">AICTE / EduSkills · Virtual</div>
+
+          <ul>
+            <li>Completed a full-stack internship covering Python, Django, and web fundamentals</li>
+            <li>Built and deployed REST APIs and dynamic web applications</li>
+          </ul>
+        </div>
+
+        <!-- ── Past role ── -->
+        <div class="log-item done">
+          <div class="log-marker"></div>
+
+          <div class="log-head">
+            <h3>ML Virtual Intern</h3>
+            <span class="log-time">Mar 2024 – May 2024</span>
+            <span class="log-status">Completed</span>
+          </div>
+
+          <div class="log-org">Google / EduSkills · Virtual</div>
+
+          <ul>
+            <li>Completed Google's ML internship program covering supervised and unsupervised learning</li>
+            <li>Implemented ML models using Python and scikit-learn</li>
+          </ul>
+        </div>
+
+      </div><!-- /log -->
+
+    </div>
+  </section><!-- /EXPERIENCE -->
+
+
+  <!-- =====================================================
+       PROJECTS SECTION
+       Three-column card grid.
+       Each card: title, status, description, bullet points,
+       tech tags, and a "View →" link.
+       ===================================================== -->
+  <section id="projects">
+    <div class="wrap">
+
+      <div class="sec-head reveal">
+        <span class="sec-tag">02 /</span>
+        <h2>Projects</h2>
+      </div>
+
+      <div class="proj-grid reveal">
+
+        <!-- ── Project 1 ── -->
+        <div class="proj-card">
+          <div class="proj-top">
+            <h3>College Discovery Platform</h3>
+            <span class="proj-status">LIVE</span>
+          </div>
+
+          <p class="desc">
+            End-to-end platform for students to discover and compare colleges,
+            with filtering, bookmarking, and admin tools.
+          </p>
+
+          <ul>
+            <li>Full CRUD with Prisma v7 + PostgreSQL</li>
+            <li>Auth via NextAuth v5 (GitHub / Google / credentials)</li>
+            <li>Deployed on Vercel with CI/CD</li>
+            <li>Zustand for global state management</li>
+          </ul>
+
+          <!-- Tech stack tags -->
+          <div class="tags">
+            <span class="tag">Next.js 14</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">TailwindCSS</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">Prisma</span>
+            <span class="tag">Zustand</span>
+          </div>
+
+          <a class="proj-link" href="https://college-discovery-app-nine.vercel.app" target="_blank">
+            View live →
+          </a>
+        </div>
+
+        <!-- ── Project 2 ── -->
+<div class="proj-card">
+  <div class="proj-top">
+    <h3>E-Commerce Web Application</h3>
+    <span class="proj-status">BUILT</span>
+  </div>
+
+  <p class="desc">
+    Full-stack e-commerce app with product listing, cart management,
+    and order processing — built with PHP, MySQL, and vanilla web tech.
+  </p>
+
+  <ul>
+    <li>Product listing, cart management, and order processing</li>
+    <li>User authentication with secure login sessions</li>
+    <li>Responsive UI design across devices</li>
+    <li>GitHub Actions workflow for CI/CD</li>
+  </ul>
+
+  <div class="tags">
+    <span class="tag">PHP</span>
+    <span class="tag">MySQL</span>
+    <span class="tag">HTML</span>
+    <span class="tag">CSS</span>
+    <span class="tag">JavaScript</span>
+  </div>
+
+  <a class="proj-link" href="https://github.com/lohitha-1357/all-in-one-store" target="_blank">
+    View on GitHub →
+  </a>
+</div>
+         
+
+        <!-- ── Project 3 ── -->
+        <div class="proj-card">
+          <div class="proj-top">
+            <h3>Admin Dashboard</h3>
+            <span class="proj-status">BUILT</span>
+          </div>
+
+          <p class="desc">
+            Feature-rich admin panel built for the Help Study Abroad technical assessment.
+          </p>
+
+          <ul>
+            <li>Data tables with sorting, filtering, and pagination</li>
+            <li>Material UI components with custom theming</li>
+            <li>Zustand for client state; NextAuth for auth</li>
+          </ul>
+
+          <div class="tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">MUI</span>
+            <span class="tag">Zustand</span>
+            <span class="tag">NextAuth</span>
+          </div>
+
+          <a class="proj-link" href="https://github.com/lohitha-1357/help-study-abroad" target="_blank">
+            View on GitHub →
+          </a>
+        </div>
+
+      </div><!-- /proj-grid -->
+
+    </div>
+  </section><!-- /PROJECTS -->
+
+
+  <!-- =====================================================
+       SKILLS / TECH STACK SECTION
+       Table-style layout: category label | chips
+       ===================================================== -->
+  <section id="stack">
+    <div class="wrap">
+
+      <div class="sec-head reveal">
+        <span class="sec-tag">03 /</span>
+        <h2>Tech Stack</h2>
+      </div>
+
+      <!-- The stack "table" -->
+      <div class="stack reveal">
+
+        <div class="stack-row">
+          <div class="stack-label">Frontend</div>
+          <div class="stack-items">
+            <span class="chip">React</span>
+            <span class="chip">Next.js</span>
+            <span class="chip">TypeScript</span>
+            <span class="chip">TailwindCSS</span>
+            <span class="chip">HTML5</span>
+            <span class="chip">CSS3</span>
+          </div>
+        </div>
+
+        <div class="stack-row">
+          <div class="stack-label">Backend</div>
+          <div class="stack-items">
+            <span class="chip">Node.js</span>
+            <span class="chip">Python</span>
+            <span class="chip">PHP</span>
+            <span class="chip">REST APIs</span>
+          </div>
+        </div>
+
+        <div class="stack-row">
+          <div class="stack-label">Database</div>
+          <div class="stack-items">
+            <span class="chip">PostgreSQL</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">MongoDB</span>
+            <span class="chip">Prisma</span>
+          </div>
+        </div>
+
+        <div class="stack-row">
+          <div class="stack-label">Auth & State</div>
+          <div class="stack-items">
+            <span class="chip">NextAuth v5</span>
+            <span class="chip">Zustand</span>
+            <span class="chip">Zod</span>
+          </div>
+        </div>
+
+        <div class="stack-row">
+          <div class="stack-label">Tools</div>
+          <div class="stack-items">
+            <span class="chip">Git</span>
+            <span class="chip">GitHub</span>
+            <span class="chip">Vercel</span>
+            <span class="chip">VS Code</span>
+            
+          </div>
+        </div>
+
+        <div class="stack-row">
+          <div class="stack-label">Security</div>
+          <div class="stack-items">
+            <span class="chip">Cyber Security (CSE)</span>
+            <span class="chip">Input Validation</span>
+            <span class="chip">Auth Hardening</span>
+          </div>
+        </div>
+
+      </div><!-- /stack -->
+
+    </div>
+  </section><!-- /STACK -->
+
+
+  <!-- =====================================================
+       EDUCATION SECTION
+       List of qualifications with score and year.
+       ===================================================== -->
+  <section id="education">
+    <div class="wrap">
+
+      <div class="sec-head reveal">
+        <span class="sec-tag">04 /</span>
+        <h2>Education</h2>
+      </div>
+
+      <div class="edu-list reveal">
+
+        <!-- ── B.Tech ── -->
+        <div class="edu-item">
+          <div>
+            <h3>B.Tech — Computer Science & Engineering (Cyber Security)</h3>
+            <div class="org">Raghu Engineering College, Visakhapatnam</div>
+          </div>
+          <div>
+            <div class="edu-score">9.07 CGPA</div>
+            <div class="edu-time">2023 – 2027</div>
+          </div>
+        </div>
+
+        <!-- ── Intermediate ── -->
+        <div class="edu-item">
+          <div>
+            <h3>Intermediate — MPC (Maths, Physics, Chemistry)</h3>
+            <div class="org">Narayana Junior College</div>
+          </div>
+          <div>
+            <div class="edu-score">97%</div>
+            <div class="edu-time">2021 – 2023</div>
+          </div>
+        </div>
+
+        <!-- ── SSC ── -->
+        <div class="edu-item">
+          <div>
+            <h3>SSC — Secondary School Certificate</h3>
+            <div class="org">Jubilee english medium School</div>
+          </div>
+          <div>
+            <div class="edu-score">100%</div>
+            <div class="edu-time">2020 – 2021</div>
+          </div>
+        </div>
+
+      </div><!-- /edu-list -->
+
+
+      <!-- ── Certifications / Achievements ── -->
+      <div class="sec-head reveal" style="margin-top: 52px;">
+        <span class="sec-tag">05 /</span>
+        <h2>Certifications</h2>
+      </div>
+
+      <div class="ach-grid reveal">
+
+        <div class="ach-item">
+          <div class="ach-check">✓</div>
+          <span>HackerRank — Frontend Developer (React)</span>
+        </div>
+
+        <div class="ach-item">
+          <div class="ach-check">✓</div>
+          <span>NPTEL — Cloud Computing (Elite)</span>
+        </div>
+
+        <div class="ach-item">
+          <div class="ach-check">✓</div>
+          <span>AWS Academy — Cloud Foundations</span>
+        </div>
+
+        <div class="ach-item">
+          <div class="ach-check">✓</div>
+          <span>AWS Academy — Cloud Architecting</span>
+        </div>
+
+        <div class="ach-item">
+          <div class="ach-check">✓</div>
+          <span>Cisco — Python Essentials 1</span>
+        </div>
+
+        <div class="ach-item">
+          <div class="ach-check">✓</div>
+          <span>GeeksforGeeks — Python Programming</span>
+        </div>
+
+        <div class="ach-item">
+          <div class="ach-check">✓</div>
+          <span>Google / EduSkills — ML Virtual Internship</span>
+        </div>
+
+        <div class="ach-item">
+          <div class="ach-check">✓</div>
+          <span>AICTE / EduSkills — Python Full Stack Internship</span>
+        </div>
+
+      </div><!-- /ach-grid -->
+
+    </div>
+  </section><!-- /EDUCATION -->
+
+
+  <!-- =====================================================
+       FOOTER / CONTACT SECTION
+       4 contact cards + copyright line.
+       ===================================================== -->
+  <footer id="contact">
+    <div class="wrap">
+
+      <!-- Centered heading + subtitle -->
+      <div class="contact-head reveal">
+        <h2>Let's connect</h2>
+        <p>
+          Open to fresher web developer and full-stack roles.
+          Reach out and I'll get back to you quickly.
+        </p>
+      </div>
+
+      <!-- 4 contact cards -->
+      <div class="contact-grid reveal">
+
+        <a class="contact-card" href="mailto:karedalohithapravallika@gmail.com">
+          <div class="clab">Email</div>
+          <div class="cval">karedalohithapravallika@gmail.com</div>
+        </a>
+
+        <a class="contact-card" href="https://github.com/lohitha-1357" target="_blank">
+          <div class="clab">GitHub</div>
+          <div class="cval">github.com/lohitha-1357</div>
+        </a>
+
+        <a class="contact-card" href="https://linkedin.com/in/lohithapravallika-karedla6a2ba1343" target="_blank">
+          <div class="clab">LinkedIn</div>
+          <div class="cval">lohithapravallika-karedla</div>
+        </a>
+
+        <div class="contact-card">
+          <div class="clab">Location</div>
+          <div class="cval">Visakhapatnam, India</div>
+        </div>
+
+      </div><!-- /contact-grid -->
+
+      <!-- Copyright -->
+      <div class="foot-bottom">
+        © 2026 Karedla Lohitha Pravallika — Built with HTML &amp; CSS
+      </div>
+
+    </div>
+  </footer><!-- /FOOTER -->
+
+
+  <!-- =====================================================
+       SCROLL-REVEAL SCRIPT
+       Watches for elements with class "reveal".
+       When they enter the viewport, adds class "in"
+       which triggers the CSS opacity + translateY transition.
+       ===================================================== -->
+  <script>
+    // IntersectionObserver fires when an element enters/exits the viewport
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');   // trigger the CSS animation
+            observer.unobserve(entry.target);   // only animate once
+          }
+        });
+      },
+      { threshold: 0.12 }   // fire when 12% of the element is visible
+    );
+
+    // Watch every element that has the "reveal" class
+    document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+  </script>
+
+
+</body>
+</html>
